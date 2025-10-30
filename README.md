@@ -87,7 +87,7 @@ Take the $E_m$ part of the 19-round boomerang distinguisher of GIFT-64 (the usag
 
 5. In addition, the experiments are in the directory 'experiment'.
    
-   Run the following command to perform the experiment.
+   Run the following command to perform the experiment. Change the package directory if necessary.
    
        java route_probability_test.java
 
