@@ -52,6 +52,7 @@ Take the $E_m$ part of the 19-round boomerang distinguisher of GIFT-64 (the usag
    
    First, perform the command:
    
+       mkdir result
        python3 em_bc_search_r_2.py
    
    to get the routes of all BCs, we give them in the file 'routes_clustering.py' in the directories 'u0_v0_solutions' and 'u0_v0_zeros', respectively.
