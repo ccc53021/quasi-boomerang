@@ -2,7 +2,7 @@
 
 ===================================================================
 
-**## 1. Overview**
+## 1. Overview
 
 **Paper:** **Mix-Basis Geometric Approach to Boomerang Distinguishers. ToSC 2025, Issue 3.**
 
@@ -12,7 +12,7 @@ The codes of 'search for BCs/quasi-BCs', 'derive key dependencies', 'compute the
 
 ===================================================================
 
-**## 2. Requirements**
+## 2. Requirements
 
 **Hardware:** 10 GB RAM
 
@@ -22,7 +22,7 @@ The codes of 'search for BCs/quasi-BCs', 'derive key dependencies', 'compute the
 
 ===================================================================
 
-**## 3. Environment Installation**
+## 3. Environment Installation
 
 We use the SMT-based solver 'pyboolector' to search for the BCs/quasi-BCs of the boomerang distinguishers using Python3. Thus, the 'pyboolector' needs to be installed before running the code of 'search for BCs/quasi-BCs'.
 
@@ -42,7 +42,7 @@ Some experiments were conducted using java, so java needs to be installed. You c
 
 ===================================================================
 
-**## 4. Usage and Experiments**
+## 4. Usage and Experiments
 
 Take the $E_m$ part of the 19-round boomerang distinguisher of GIFT-64 (the usage of other distinguishers, e.g. SKINNY, is the same) as an example to perform the basic test:
 
@@ -52,8 +52,8 @@ Take the $E_m$ part of the 19-round boomerang distinguisher of GIFT-64 (the usag
    
    First, perform the command:
    
-       mkdir result
-       python3 em_bc_search_r_2.py
+	mkdir result       
+	python3 em_bc_search_r_2.py
    
    to get the routes of all BCs, we give them in the file 'routes_clustering.py' in the directories 'u0_v0_solutions' and 'u0_v0_zeros', respectively.
 
@@ -87,26 +87,27 @@ Take the $E_m$ part of the 19-round boomerang distinguisher of GIFT-64 (the usag
 
 5. In addition, the experiments are in the directory 'experiment'.
    
-   Run the following command to perform the experiment. Change the package directory if necessary.
+   Run the following command to perform the experiment.
    
        java route_probability_test.java
 
+   In addition, if the current running code is configured with a path, please import your necessary packages, such as: package <something>;.
 ===================================================================
 
-**## 5. Lisense**
+## 5. License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ===================================================================
 
-**## 6. Citation**
+## 6. Citation
 
 [Chengcheng Chang, Hosein. Hadipour, Kai Hu, Muzhou Li, and Meiqin Wang]. "Mix-Basis Geometric Approach to Boomerang Distinguishers." ToSC 2025, issue 3.
 Artifact: [ccc53021/quasi-boomerang](https://github.com/ccc53021/quasi-boomerang)
 
 ===================================================================
 
-**## 7. Contact**
+## 7. Contact
 
 For questions about this artifact: [[chengcheng.chang@mail.sdu.edu.cn](mailto:chengcheng.chang@mail.sdu.edu.cn)]
 
