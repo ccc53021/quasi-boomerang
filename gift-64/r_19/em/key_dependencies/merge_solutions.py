@@ -6,7 +6,7 @@ with open(output_file, 'w') as f_out:
 
     numbers = 576
     for route_number in range(numbers):
-        input_file = "u0_v0_zeros/result/quasibc_search_lower_8_w_0_to_50_route_{}.txt".format(route_number)
+        input_file = "u0_v0_zeros/result/quasibc_search_upper_1_lower_1_w_0_to_50_route_{}.txt".format(route_number)
         with open(input_file, 'r') as f_in:
             next(f_in)
             next(f_in)
@@ -14,5 +14,6 @@ with open(output_file, 'w') as f_out:
             f_out.write("[" + '\n')
             for line in f_in:
                 f_out.write(line)
+
 
     f_out.write("]" + '\n')
