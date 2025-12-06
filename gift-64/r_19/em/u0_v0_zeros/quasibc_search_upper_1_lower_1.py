@@ -494,7 +494,7 @@ print()
 print(len(all_routes))
 
 # pool_size = len(all_routes)
-# all is 64
+# all is 576
 pool_size = 40
 
 begin_i = 0
@@ -511,4 +511,5 @@ for i in range(begin_i, end_i):
         route_mask.append(0x0)
     pool.apply_async(get_quasidifferentials_by_u0_v0, (route_mask, route_diff, i, min_weight, max_weight,))
 pool.close()
+
 pool.join()
